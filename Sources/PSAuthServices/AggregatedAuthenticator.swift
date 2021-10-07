@@ -47,7 +47,7 @@ public final class AggregatedAuthenticator: NSObject, ASAuthorizationControllerD
             appleAuthenticator.login(with: appleIDCredential)
             // BUT if I do:
             // appleAuthenticator.login()
-            // it works fine, but it show that bottom sheet again asking for your face/touch-id again, but only for apple id this time
+            // it works fine, but it shows that bottom sheet again asking for your face/touch-id again, but only for apple id this time
         case let emailPasswordPair as ASPasswordCredential:
             emailAuthenticator.login(with: emailPasswordPair)
         default:
